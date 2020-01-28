@@ -8,9 +8,28 @@ describe('workspace-project App', () => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
+  it('should display app title', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('photo-app app is running!');
+    expect(page.getTitleText()).toEqual('Acme Photos');
+  });
+
+  it('should display home button', () => {
+    page.navigateTo();
+    expect(page.getHomeButton()).toEqual('Go Home');
+  });
+
+  it('should redirect to all albums page', () => {
+    page.navigateTo();
+    page.clickOnViewAllAlbums().then(() => {
+      expect(page.getPageTitle()).toEqual('All Albums');
+    });
+  });
+
+  it('should render a lightbox after clicking on a photo', () => {
+    page.navigateTo();
+    page.clickOnPhoto().then(() => {
+      expect(page.getLightboxOverlay).toBeTruthy();
+    });
   });
 
   afterEach(async () => {

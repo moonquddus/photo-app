@@ -1,0 +1,10 @@
+<h1>All Albums</h1>
+<ul id="album-list">
+  <li *ngFor="let album of albums; index as i" routerLink="/album/{{ album.id }}/photos">
+    <h4>{{ album.title }}</h4>
+    <p>ID: ({{ album.id }})</p>
+  </li>
+</ul>
+<div class="centered" *ngIf="loadMoreLink">
+  <button type="button" class="load-more-button" [ngClass]="{'active': loading}" (click)="loadMoreAlbums()">{{ loading ? "Loading..." : "Load More" }}</button>
+</div>

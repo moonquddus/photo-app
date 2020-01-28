@@ -1,0 +1,11 @@
+<h1>{{ title }}</h1>
+<ul id="photo-grid">
+  <li *ngFor="let photo of album; index as i" class="single-photo" (click)="open(i)">
+    <h4>{{ photo.caption }}</h4>
+    <div class="hover-screen"></div>
+    <img [src]="photo.thumb" alt="{{ photo.caption }}" />
+  </li>
+</ul>
+<div class="centered" *ngIf="loadMoreLink">
+  <button type="button" class="load-more-button" [ngClass]="{'active': loading}" (click)="loadMorePhotos()">{{ loading ? "Loading..." : "Load More" }}</button>
+</div>

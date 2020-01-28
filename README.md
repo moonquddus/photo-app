@@ -1,14 +1,21 @@
-# PhotoApp
+# Acme Photos App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.23.
+Hello! A straightforward coding challenge solution here! I've made an app that feeds off a mock API to make a photo gallery app! Features:
+
+* Clicking on a photo thumbnail will enlarge the image in a lightbox
+* Homepage has list of all photos - these lists are lazy loaded, so you need to click on "Load More" to view more images (and there are plenty, haha). Don't really like those "scroll to the bottom" auto-infinite scrolls because, sometimes you just want to read the footer, ya'know?
+* There's a "Go Home" button on the top right if you need to go back to the main view
+* Clicking on "View All Albums >>" will take you to a list of all albums
+* Shows a carousel of the latest albums available, clicking on the album will go to its local album page
+* Found out last-second there's support in this API for users! Maybe some other time, I can create a User Service & Provider, and filter the photos by user + have a nice profile page or something
+* Just one se
+* There should be a few unit/e2e tests, running off Jasmine/Protractor/Karma. Very simple tests, they should all be passing. Also the lint test passed fine for me, which is always nice :)
+* I've pre-prepared a build inside /dist if you wanna jump right in. However, you're free to just deploy it using `ng serve`
+* The carousel + lightbox are third-party modules I grabbed off npm. I wanted to show at least _some_ styling skills so I didn't implement the usual Angular Material Design library, and made a very basic responsive container and gave it a splash of paint
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
 
 ## Build
 
@@ -16,12 +23,12 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run `ng test`
 
 ## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Run `ng e2e`
 
-## Further help
+## Running lint test
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Run `ng lint`

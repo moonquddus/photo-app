@@ -1,0 +1,8 @@
+<h1>Latest Albums</h1>
+<swiper (window:resize)="onResize($event)" [config]="overrideConfig">
+  <div *ngFor="let album of albums">
+    <div class="carousel-item">
+      <a routerLink="/album/{{ album.id }}/photos" >{{ album.title }}</a>
+    </div>
+  </div>
+</swiper>

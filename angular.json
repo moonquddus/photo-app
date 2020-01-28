@@ -28,7 +28,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "./node_modules/ngx-lightbox/lightbox.css",
+              "./node_modules/swiper/dist/css/swiper.min.css"
             ],
             "scripts": []
           },
@@ -93,7 +95,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "./node_modules/ngx-lightbox/lightbox.css",
+              "./node_modules/swiper/dist/css/swiper.min.css"
             ],
             "scripts": []
           }
