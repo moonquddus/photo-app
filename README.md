@@ -10,7 +10,6 @@ Hello! A straightforward coding challenge solution here! I've made an app that f
 * Found out last-second there's support in this API for users! Maybe some other time, I can create a User Service & Provider, and filter the photos by user + have a nice profile page or something
 * Just one se
 * There should be a few unit/e2e tests, running off Jasmine/Protractor/Karma. Very simple tests, they should all be passing. Also the lint test passed fine for me, which is always nice :)
-* I've pre-prepared a build inside /dist if you wanna jump right in. However, you're free to just deploy it using `ng serve`
 * The carousel + lightbox are third-party modules I grabbed off npm. I wanted to show at least _some_ styling skills so I didn't implement the usual Angular Material Design library, and made a very basic responsive container and gave it a splash of paint
 
 ## Development server
